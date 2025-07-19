@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    
+  
+    <style>
+      /* page background style*/
+          body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Lily Script One', cursive;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        header {
+                background-color: #803b19;
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 13px;
+
+            }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+                nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #a8dadc;
+        } 
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+    h1 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    /* Footer style */
+    #footer {
+            background-color: #803b19;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            width:100%;
+          }
+   /* Header */
+          @keyframes header {
+        from{
+            transform: translateY(-50px);
+        }
+        to{
+            transform: translateY(1px);
+        }
+    }
+    @keyframes nav {
+         from{
+            transform: translateY(-10px);
+        }
+        to{
+            transform: translateY(1px);
+        }  
+       to {
+            box-shadow: 2px 2px 20px white;
+        }
+    }  
+    h1{
+        text-align: center;
+        animation: header 1.2s linear both ; 
+        color:#D27108;
+        font-weight: bold;
+        text-align: left;
+        font-size: 60px;
+        text-shadow: 2px 2px #333;
+    }
+    li{
+      list-style: none; 
+      margin:0px 0px;
+      display: inline-block;
+      font-size: 20px;
+      padding: 10px 10px;
+      color: black;
+      border-radius: 10%;
+      transition: 5s;
+    }
+      /* style for game gallery page */
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+      }
+      .game-card {
+        width: 200px;
+        border: 1px solid whitesmoke;
+        padding: 10px;
+      }
+      .game-card img {
+        max-width: 100%;
+        height: auto;
+      }
+      .game-card h3 {
+        margin-top: 10px;
+        color: black;
+      }
+/* Social icon color */
+      li:hover .fa-whatsapp {
+  color: green; 
+  transition: .5s;
+}
+li:hover .fa-snapchat-square {
+  color: yellow;
+  transition: .5s;
+}
+li:hover .fa-instagram {
+  color: #c32aa3;
+  transition: .5s;
+}
+li:hover .fa-twitter {
+  color: #1da1f2;
+  transition: .5s;
+}
+li:hover .fa-facebook-official {
+  color: #4267B2; 
+  transition: .5s;
+}
+p a {
+  margin-left: 10px;
+}
+  </style>
+  </head>
+  <body style="background-image:url('images/home2.jpg');">
+    <header>
+		<h1>GameStationX</h1> 
+		<nav>
+			<ul>
+				<li><a href="HomePage.html">Home</a></li>
+				<li><a href="gamepage.html">Game</a></li>
+				<li><a href="About2.html">About Us</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Services.html">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+  <!--game section-->
+      <h1>Browse our gallery collection </h1>
+          <div class="container">
+            <div class="game-card">
+              <img src="images/1.jpg"  alt="Game 1">
+              <h3>Super Mario Bros</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/imgage2.jpg" width="900"  alt="Game 2">
+              <h3>Arcade, 1986</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/3.jpg" alt="Game 3">
+              <h3>The Legend Of Zelda</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/4.jpg" alt="Game 1">
+              <h3>Street Fighter II Turbo</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/5.jpg" alt="Game 2">
+              <h3>Tetris</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/6.jpg" alt="Game 3">
+              <h3>Sonic The Hedgehog 2</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/7.jpg" alt="Game 1">
+              <h3>Streets Of Rage 2</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/8.jpg" alt="Game 2">
+              <h3>Duck Hunt</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/9.jpg" alt="Game 3">
+              <h3>Paperboy</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/10.jpg" alt="Game 1">
+              <h3>Ms. Pac-Man</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/11.jpg" alt="Game 2">
+              <h3>Gauntlet</h3>
+            </div>
+            <div class="game-card">
+              <img src="images/12.jpg" alt="Game 3">
+              <h3>Chuckie Egg</h3>
+            </div>  
+          </div>
+            <!-- Socialmedia icon -->
+<div class = "wrapper">
+  <div class="media">
+    <ul>
+      <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+      </ul>
+  </div>
+</div>
+        <!-- Term&Condition -->
+<p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p>
+<!--  Footer -->
+<div id="footer">
+  &copy; 2023 GamestationX. All rights reserved.
+</div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,209 @@
+
+
+*{
+    padding: 0;
+    margin:0;
+    text-decoration:none;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    ;
+}
+
+
+
+  /*body{
+     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    max-width: 1224px;
+}*/
+       /*Headerstyling**/
+       body{
+        font-family:montserrat;
+       }
+nav{
+    background: blueviolet ;
+    height: 80px;
+    width:100%;  
+}
+label.logo{
+    color: whitesmoke;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 10px;
+} 
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+/*navpostioning*/
+nav ul li a{
+    color: whitesmoke;
+    font-size: 13px;
+    padding: 25px 10px; 
+    border-radius:5px ;
+    text-transform: uppercase;
+    
+}
+
+a.active,a:hover{
+    width: 130px;
+    height: 50px; ;
+    background: blueviolet;
+    transition:.5s;
+    
+}
+
+
+
+/*h1{
+    text-align: center;
+    font-size: 100px;
+    color: red;
+    animation: header 1.2s linear both ; 
+      
+        color:black;
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 0px 1px 3px black;
+        text-shadow: 1px 0px 3px white;}
+        */
+
+div.topItems{
+    margin-top: 5%;
+text-align: center;
+display: flex;
+justify-content: center;}
+/* background: RED; 
+
+}*/
+
+header{
+text-align: right;
+padding: 0px;
+
+}
+ul.navBar{
+list-style: none;
+display: inline-flex;
+}
+   
+
+/**ul.navBar li {
+  
+}**/
+
+
+ul.navBar a:hover {
+  background: #1b9bff; 
+  animation: nav 1s linear both ;
+  
+} 
+
+ul.navBar a {
+    display: block;
+   
+    width: 100px;
+    height: 50px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;}
+   
+
+
+@keyframes header {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+
+@keyframes nav {
+     from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(1px);
+    } 
+    
+   to {
+        box-shadow: 2px 2px 20px white;
+    }
+
+} 
+
+/**center image*/
+div.imagWrapper{
+    position: right;
+   top: 70%;
+   left: 20%;
+   right: 70%;
+   bottom: 50%;
+
+    background-color:none; 
+   padding: 0px;
+   margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+top images
+img.grandImage{
+   width: 300px;
+   height: 300px;}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    background: blueviolet;
+    color: white;
+}
+
+
+
+
+/*********Service paragraph******/
+p{
+    color: antiquewhite;
+
+}
+
+
+.highlight{
+    color: greenyellow;
+}
+
+.highlight{
+    color:aqua;
+}
+
+/**Request form**/
+
+
+        
+
+        /* ul,ol{ 
+            list-style-type: default;
+        /* } 
+
+        

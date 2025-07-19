@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="gamestyle.css"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <title>Signup</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body style="background-image:url('images/vin.jpg');"></body>
+</head>
+<body>
+
+
+<div class="container">
+	<div class="header">
+		<h2>Create Account</h2>
+	</div>
+	<form id="form" class="form">
+		<div class="form-control">
+			<label for="username">Username</label>
+			<input type="text" placeholder="nonye94" id="username" />
+         <i class='fas fa-check-circle'></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Email</label>
+			<input type="email" placeholder="nonye@gmail.com" id="email" />
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password</label>
+			<input type="password" placeholder="Password" id="password"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<div class="form-control">
+			<label for="username">Password check</label>
+			<input type="password" placeholder="Password two" id="password2"/>
+			<i class="fas fa-check-circle"></i>
+			<i class="fas fa-exclamation-circle"></i>
+			<small>Error message</small>
+		</div>
+		<button>Submit</button>
+		<br>
+	</form>
+</div>
+
+
+
+
+<style> /**form style**/
+
+                    
+* {
+	box-sizing: border-box;
+}
+
+body { /**body style**/
+	background-color: #1e3a43;
+	font-family: 'Lily Script One', cursive;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	margin: 20;
+	background-repeat: no-repeat;
+	background-size: cover;
+} 
+           
+.container { /**inside style**/
+	background-color: #d2d8d9;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	width: 350px;
+	max-width: 300%;
+	position: absolute;
+}
+
+.header { /**create account**/
+	border-bottom: 1px solid #a5b0b4;
+	background-color: #a5b0b4;
+	padding: 20px 50px;
+}
+
+.header h2 {
+	margin: 10;
+}
+
+.form {
+	padding: 0px 30px;	
+}
+
+.form-control {
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display:block ;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 11px;
+	width: 100%;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: grey;
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+	background-color: black;
+	border: 2px solid gold;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+footer{
+      
+      background: #060708;
+      color: white;
+  }
+
+  li{
+  list-style: none;
+  margin:0px 0px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: black;
+  border-radius: 10%;
+  transition: 5s;
+  
+}
+
+/*.media{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-53, -50);
+}*/
+
+/* Social icon color */
+
+li:hover .fa-whatsapp {
+  color: green;
+  
+  transition: .5s;
+}
+li:hover .fa-snapchat-square {
+  color: yellow;
+  
+  transition: .5s;
+}
+li:hover .fa-instagram {
+  color: #c32aa3;
+  
+  transition: .5s;
+}
+li:hover .fa-twitter {
+  color: #1da1f2;
+
+  transition: .5s;
+}
+li:hover .fa-facebook-official {
+  color: #4267B2;
+  
+  transition: .5s;
+}
+
+p a {
+  margin-left: 10px;
+}
+  </style>
+
+<script language="JavaScript">
+   const form = document.getElementById('form');
+   const username = document.getElementById('username');
+   const email = document.getElementById('email');
+   const password = document.getElementById('password');
+   const password2 = document.getElementById('password2');
+   
+   form.addEventListener('submit', e => {
+      e.preventDefault();
+      
+      checkInputs();
+   });
+   
+   function checkInputs() {
+      // trim to remove the whitespaces
+      const usernameValue = username.value.trim();
+      const emailValue = email.value.trim();
+      const passwordValue = password.value.trim();
+      const password2Value = password2.value.trim();
+      
+      if(usernameValue === '') {
+         setErrorFor(username, 'Username cannot be blank');
+      } else {
+         setSuccessFor(username);
+      }
+      
+      if(emailValue === '') {
+         setErrorFor(email, 'Email cannot be blank');
+      } else if (!isEmail(emailValue)) {
+         setErrorFor(email, 'Not a valid email');
+      } else {
+         setSuccessFor(email);
+      }
+      
+      if(passwordValue === '') {
+         setErrorFor(password, 'Password cannot be blank');
+      } else {
+         setSuccessFor(password);
+      }
+      
+      if(password2Value === '') {
+         setErrorFor(password2, 'Password2 cannot be blank');
+      } else if(passwordValue !== password2Value) {
+         setErrorFor(password2, 'Passwords does not match');
+      } else{ 
+         setSuccessFor(password2);
+      }
+   }
+   
+   function setErrorFor(input, message) {
+      const formControl = input.parentElement;
+      const small = formControl.querySelector('small');
+      formControl.className = 'form-control error';
+      small.innerText = message;
+   }
+   
+   function setSuccessFor(input) {
+      const formControl = input.parentElement;
+      formControl.className = 'form-control success';
+   }
+      
+   function isEmail(email) {
+      return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+   }
+   </script>
+           
+    </form>
+    </div>
+
+    <script language="JavaScript">
+		function ValidationCheck(form) {
+ 	 		if (form.NameInput.value == "")
+   	 		alert("You forgot to put anything for Name!")
+  	 		if (form.EmailInput.value == "" || form.EmailInput.value.indexOf('@') == -1) 
+   			alert("You did not put a valid Email!");
+		}
+
+	</script>
+
+    <footer>
+        &copy; 2023 GameStationX. All rights reserved.
+	</footer>
+	
+
+
+</body>
+</html>

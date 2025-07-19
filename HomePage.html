@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  
+    <style>
+      body { 
+       background-color: #F2d3aa;
+       font-family: 'Lily Script One', cursive;
+       margin: 0;
+       padding: 0;
+       color: white;
+       font-size: 20px;
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+     
+     header {
+     background-color: #803b19;
+     color: #fff;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 13px;
+     text-shadow: 2px 2px #333;
+     font-size: 48px;
+ }
+ 
+ h1 {
+       margin: 0;
+       font-size: 32px;
+   }
+
+   nav ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       display: flex;
+   }
+
+   nav ul li {
+       margin-right: 20px;
+   }
+
+   nav ul li:last-child {
+       margin-right: 0;
+   }
+   
+   nav ul li a {
+       color: #fff;
+       text-decoration: none;
+       font-size: 18px;
+   }
+    
+   
+     nav a:hover {
+       color: #a8dadc;
+       
+     }
+    
+     #footer {
+       background-color: #803b19;
+       color: white;
+       padding: 10px;
+       text-align: center;
+       font-size: 18px;
+     }
+     /* Sign in form */
+   div#content{
+     height:100vh ;
+     
+   }
+   form{
+     padding: 30px;
+   }
+
+ div.container {
+    display: flex;
+ }
+
+ div.container ul{
+   display: flex;
+
+   list-style: none;
+   gap: 50px;
+ }
+ div.container ul li{
+   background: rgba(18, 17, 17, 0.3);
+   display: grid;
+   justify-content: center;
+ }
+ 
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+ 
+ h1 {
+     margin-top: 0;
+ }
+ 
+ input[type=text], input[type=password] {
+     padding: 10px;
+     margin: 10px 0;
+     border: 0;
+     border-radius: 3px;
+ }
+ 
+ .btn {
+       display: inline-block;
+       background-color: #333;
+       color: #fff;
+       padding: 10px 20px;
+       text-decoration: none;
+       border-radius: 5px;
+       transition: all 0.3s ease-in-out;
+     }
+
+     .btn:hover {
+       background-color: white;
+       color: #333;
+       border: 2px solid #333;
+     }  
+
+     /* Header style */
+
+     @keyframes header {
+   from{
+       transform: translateY(-50px);
+   }
+   to{
+       transform: translateY(1px);
+   }
+}
+
+@keyframes nav {
+    from{
+       transform: translateY(-10px);
+   }
+   to{
+       transform: translateY(1px);
+   } 
+   
+  to {
+       box-shadow: 2px 2px 20px white;
+   }
+
+} 
+
+h1{   
+   text-align: center;
+   /*font-size: 50px;
+   color: red;*/
+   animation: header 1.2s linear both ; 
+     
+       color:#D27108;
+       font-size: 50px;
+       font-weight: bold;
+       text-align: left;
+       font-size: 60px;
+       text-shadow: 2px 2px #333;
+}
+
+/*socialicon styling & colour*/
+li{
+ list-style: none;
+ margin:0px 0px;
+ display: inline-block;
+ font-size: 20px;
+ padding: 10px 10px;
+ color:white ;
+ /* border: 1px solid brown; */
+ border-radius: 10%;
+ transition: 5s;
+}
+
+li:hover .fa-whatsapp {
+ color: green;
+ transition: .5s;
+}
+li:hover .fa-snapchat-square {
+ color: yellow;
+ transition: .5s;
+}
+li:hover .fa-instagram {
+ color: #c32aa3;
+ transition: .5s;
+}
+li:hover .fa-twitter {
+ color: #1da1f2;
+ transition: .5s;
+}
+li:hover .fa-facebook-official {
+ color: #4267B2;
+ transition: .5s;
+}
+
+p a {
+ margin-left: 10px;
+}
+span{
+ color: red;
+}
+
+iframe{
+    border-width: 0px;
+}
+ </style>  
+  </head>
+    <body style="background-image:url('images/block.jpg');">
+
+            <!--Nav Bar-->
+            <header>
+              <h1>GameStationX</h1>
+              <nav>
+                <ul>
+                  <li><a href="HomePage.html">Home</a></li>
+                  <li><a href="gamepage.html">Game</a></li>
+                  <li><a href="About2.html">About Us</a></li>
+                  <li><a href="Contact.html">Contact</a></li>
+                  <li><a href="Gallery.html">Gallery</a></li>
+                  <li><a href="Services.html">Services</a></li>
+                </ul>
+              </nav>
+            </header>
+
+         
+
+    <div id="content">   <!--Paragraph-->
+      <div class="container">
+       
+        <ul>
+              <!-- Video -->
+        <li><iframe width="460" height="400" src="https://www.youtube.com/embed/SCRm5IG0Grg?start=155" allowfullscreen></iframe></li> 
+
+          <li class="para">Welcome to GamestationX where you can enjoy unlimited vintage games for free.<br> 
+            We also fix vintage games and have been doing so for a
+            numbers of years. If you are looking to repair and item, buy or just looking for tips, you have come to
+             the right place. You can relax knowing your item is in good hands<br>
+          </li>
+
+          <li> <form> <!--SignUp form-->
+              <h1>Sign In</h1>
+              <label for="username"><b>Username</b></label>
+              <input type="text" id="username" placeholder="Enter Username" name="username" required>
+        
+              <label for="password"><b>Password</b></label>
+              <input type="password" id="password" placeholder="Enter Password" name="password" required>
+        
+              <div class="check1">
+                <input id="check1"  type="checkbox" name="remember me" value="1"> 
+                <label class="customlabel" for="check1">Remember Me</label>
+              </div>
+              <button type="submit">Sign In</button>
+              New here? <A HREF ="Register.html"><span> Create Account </span></A>
+            </form>
+          </li>  
+        </ul>   
+      </div>
+    </div>  
+
+
+<div class = "wrapper"> <!--Social media icon-->
+  <div class="media">
+    <ul>
+      <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+      </ul>
+  </div>
+</div>
+
+ <p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p> 
+ 
+ <div id="footer"> <!--Footer-->
+  &copy; 2023 GamestationX. All rights reserved.
+</div>
+
+</body>
+</html>
+
+ 

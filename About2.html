@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  
+ 
+ 
+    <style>
+      /* Page style*/
+    body {
+      font-family: 'Lily Script One', cursive;
+      margin: 0;
+      padding: 0;   
+      font-size: 20px;
+      color: black;
+      background:#fcba6c;
+  }
+  
+  header {
+      background-color: #803b19;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px;
+      text-shadow: 2px 2px #333;
+      font-size: 48px;
+  }
+ 
+  div.container{
+    gap: 0px;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+  }
+   
+  div.paraContainer{
+    width:55%;
+  }
+
+  h1 {
+      margin: 0;
+      font-size: 32px;
+  }
+  
+  nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+  }
+  
+  nav ul li {
+      margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+      margin-right: 0;
+  }
+  
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+      color: #a8dadc;
+  } 
+  
+  main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+  }
+
+/* Footer */
+#footer {
+      background-color: #803b19;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
+/* Body Page */
+.about{
+height: 100vh;
+width: 100%;
+background: #fcba6c;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+align-items: center;
+gap: 1rem;
+}
+.about-img img{
+height: auto;
+width: 500px;
+max-width: 80%;
+}
+.about-text h1{
+color: #fff;
+font-size: 90px;
+margin-bottom: 20px;
+}
+.about-text h5{
+color: #fff;
+font-size: 28px;
+text-transform: capitalize;
+margin-bottom: 25px;
+letter-spacing: 2px;
+}
+span{
+color: #803b19;
+}
+.about-text p{
+color: white;
+letter-spacing: 1px;
+line-height: 32px;
+font-size: 18px;
+margin-bottom: 45px;
+}
+.btn{
+display: inline-block;
+padding: 13px 30px;
+background: #803b19;
+color: whitesmoke;
+border: 2px solid transparent;
+font-weight: bold;
+border-radius: 30px;
+transition: all ease .50s;
+}
+.btn:hover{
+transform: scale(1.1);
+background: black;
+border: 2px solid red;
+}
+/* Header */
+@keyframes header {
+  from{
+      transform: translateY(-50px);
+  }
+  to{
+      transform: translateY(1px);
+  }
+}
+
+@keyframes nav {
+   from{
+      transform: translateY(-10px);
+  }
+  to{
+      transform: translateY(1px);
+  } 
+  
+ to {
+      box-shadow: 2px 2px 20px white;
+  }
+} 
+
+h1{
+  text-align: center;
+  animation: header 1.2s linear both ; 
+  color:#D27108;
+  font-weight: bold;
+  text-align: left;
+  font-size: 60px;
+  text-shadow: 2px 2px #333;
+}
+
+li{
+list-style: none;
+margin:0px 0px;
+display: inline-block;
+font-size: 20px;
+padding: 10px 10px;
+color: black;
+border-radius: 10%;
+transition: 5s;
+}
+
+/* Social icon color */
+li:hover .fa-whatsapp {
+  color: green;
+  
+  transition: .5s;
+}
+li:hover .fa-snapchat-square {
+  color: yellow;
+ 
+  transition: .5s;
+}
+li:hover .fa-instagram {
+  color: #c32aa3;
+  
+  transition: .5s;
+}
+li:hover .fa-twitter {
+  color: #1da1f2;
+ 
+  transition: .5s;
+}
+li:hover .fa-facebook-official {
+  color: #4267B2;
+ 
+  transition: .5s;
+}
+
+p a {
+  margin-left: 10px;
+}
+</style>
+</head>
+<body>
+   
+<!-- Header -->
+     <header>
+        <h1>GameStationX</h1>
+        <nav>
+          <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="gamepage.html">Game</a></li>
+            <li><a href="About2.html">About Us</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+           <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Services.html">Services</a></li>
+            
+          </ul>
+        </nav>
+      </header>
+           
+      <!-- Image&Paragraph -->
+          <div class="container">
+            <div class="about-img">
+              <img src="images/nitendo.png" alt="Disassembled Nitendo">
+            </div>
+            
+            <div class="paraContainer"> 
+              <h1>About Us</h1>
+              <h1>Vintage<span> & Games</span></h1>
+            <p>We are enthusiastic about preserving the history of vintage video games here at GameStationX.
+              Since more than ten years ago, we have specialised in repairing and restoring ancient video game consoles,   
+              cartridges, and controllers. We are made up of skilled specialists that are well-versed in the nuances of vintage  
+              gaming equipment. We take pleasure in our work and work hard to offer our customers repairs of the highest calibre.
+              Our mission is to offer a trustworthy and cost-effective repair service to players who wish to maintain the high quality
+              of their vintage consoles and games.<br>
+              We recognise the aggravation that results from a broken gaming system, and
+              we're dedicated to assisting you in returning to your favourite games as soon as is practical.
+              Classic video games, in our opinion at Vintage Game Repair, are more than just amusement; they are a vital component
+              of our cultural history. We are excited to continue serving you for many years to come and are glad to be a part of the
+              community that supports these cherished games..</p>
+          </div></div>
+          
+          <!-- ShopNow button -->
+        <div class="about-text">
+          <a href="shop.html" class="btn">Shop Now</a> 
+        </div>
+     
+   
+<!-- Social media icon -->
+<div class = "wrapper">
+  <div class="media">
+    <ul>
+      <li><a href="https://en-gb.facebook.com/" target="_blank"></a></li>
+      <li> <i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+       
+      <li><a href=https://www.instagram.com/ target="blank"></a></li>
+      <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+       
+      <li><a href=https://twitter.com/ target="blank"></a><li>
+      <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        
+      <li><a href=https://www.snapchat.com/ target="blank"></a></li>
+      <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+        
+        <li><a href=https://web.whatsapp.com/ target="blank"></a></li>
+        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>  
+      </ul>
+  </div>
+</div>
+<!-- Term&Condition -->
+<p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p>
+
+ <div id="footer">
+  &copy; 2023 GamestationX. All rights reserved.
+</div>
+
+
+</body>
+</html>

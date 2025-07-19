@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    
+    <style>         /*Backgroundimage style*/
+		
+	 body {  
+     background-color: burlywood;
+ 
+          } 
+		
+		body { /*Search style*/
+            font-family: 'Lily Script One', cursive;
+            margin: 0;
+            padding: 0;
+        }
+       
+        header {/*Header style*/
+            background-color: #803b19;
+            color: #D27108;
+            display: flex;
+            justify-content: space-between; 
+            padding: 13px;
+            text-align: left;
+        font-size: 60px;
+        text-shadow: 2px 2px #333;
+        }
+        
+        h1 {
+            margin: 0;
+        
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            
+        }
+        
+        nav ul li {
+            margin-right: 20px;
+        }
+        
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        nav ul li a:hover {
+            color: #a8dadc;
+        }
+        
+        main { /*Gamecard section*/
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+        
+        .game-card {
+            background-color: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            margin: 20px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+        
+        .game-card img {
+            max-width: 100%;
+        }
+        
+        .game-card h2 {
+            font-size: 24px;
+            margin-top: 10px;
+            margin-bottom: 10px
+               
+        }
+
+        h2{
+            color: black;
+        }
+
+    
+       
+
+.game-card p {
+font-size: 16px;
+color: #444;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+.button {
+background-color: #803b19;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 4px;
+text-decoration: none;
+display: inline-block;
+transition: background-color 0.3s ease;
+}
+
+.button:hover {
+background-color: pink;
+color: #a8dadc;
+cursor: pointer;
+}
+
+footer {
+background-color: #803b19;
+color: #fff;
+text-align: center;
+padding: 10px;
+margin-top: 50px;
+}
+
+footer p {
+margin: 0;
+font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+header {
+flex-direction: column;
+align-items: center;
+}
+}
+nav ul {
+	margin-top: 20px;
+}
+
+main {
+	padding: 10px;
+}
+
+.game-card {
+	margin: 10px;
+}
+
+@keyframes header {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+
+@keyframes nav {
+     from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(1px);
+    } 
+    
+   to {
+        box-shadow: 2px 2px 20px white;
+    }
+
+} 
+
+h1{
+    text-align: center;
+    /*font-size: 50px;
+    color: red;*/
+    animation: header 1.2s linear both ; 
+      
+        color:#D27108;
+        font-weight: bold;
+        text-align: left;
+        font-size: 60px;
+        text-shadow: 2px 2px #333;
+
+}
+
+li{  
+  list-style:circle;
+  margin:0px 0px; 
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: black;
+  /* border: 1px solid brown; */
+  border-radius: 10%; 
+  transition: 5s;
+  
+} 
+
+li{
+    list-style: none;
+}
+
+/* Social icon color */
+ li:hover .fa-whatsapp {
+  color: green;
+
+  transition: .5s;
+}
+li:hover .fa-snapchat-square {
+  color: yellow;
+ 
+  transition: .5s;
+}
+li:hover .fa-instagram {
+  color: #c32aa3;
+ 
+  transition: .5s;
+}
+li:hover .fa-twitter {
+  color: #1da1f2;
+  
+  transition: .5s;
+}
+li:hover .fa-facebook-official {
+  color: #4267B2;
+  
+  transition: .5s;
+}
+
+p a {
+  margin-left: 10px;
+}
+</style>
+</head>                 
+<body>
+
+	<header>
+
+		
+		<h1>GameStationX</h1> <!--NavBar-->
+		<nav>
+			<ul>
+				<li><a href="HomePage.html">Home</a></li>
+				<li><a href="gamepage.html">Game</a></li>
+				<li><a href="About2.html">About Us</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Services.html">Services</a></li>
+                 
+			</ul>
+        </header>
+	
+                       <!--Shop section-->
+	<div id="content">
+		<h1>Shop for vintage games</h1>
+		<div class="container">
+	
+			<main> 
+		<section class="game-card">
+			<img src="images/joystick.jpg" alt="Image Description">
+			<h2>JoyStick</h2>
+			<a href="Error.html" class="button">£14</a>
+		</section>
+		
+        <section class="game-card">
+			<img src="images/joycontrol.jpg" alt="Game image">
+			<h2>Joystick controller</h2>
+			<p></p>
+			<a href="Error.html" class="button">£40</a>
+		</section>
+		
+        <section class="game-card">
+			<img src="images/redg.jpg" alt="Game image">
+			<h2>Gameboy</h2>
+			<a href="Error.html" class="button">£10</a>
+		</section>
+
+        <section class="game-card">
+			<img src="images/console.jpg" alt="Game image">
+			<h2>Retro console</h2>
+			<a href="Error.html" class="button">£65</a>
+		</section>
+		
+        <section class="game-card">
+			<img src="images/2nitendo.jpg" alt="Game image">
+			<h2>Nitendo</h2>
+			<a href="Error.html" class="button">£150</a>
+		</section>
+		
+        <section class="game-card">
+			<img src="images/ni.jpg" alt="Game image">
+			<h2>Nitendo N56</h2>
+			<a href="Error.html" class="button">£19.99</a>
+		</section>
+
+        <section class="game-card">
+			<img src="images/hdmi.jpg" alt="Game image">
+			<h2>Retro HDMI</h2>
+			<a href="Error.html" class="button">£99.89</a>
+		</section>
+		<section class="game-card">
+			<img src="images/arcadebox.jpg" alt="Game image">
+			<h2>Arcade</h2>
+			<a href="Error.html" class="button">£105.76</a>
+		</section>
+		
+        <section class="game-card">
+			<img src="images/pet.jpg" alt="Game image">
+			<h2>Pet Console</h2>
+			<a href="Error.html" class="button">£199.46</a>
+		</section>
+
+        <section class="game-card">
+			<img src="images/ata.jpg" alt="Game image">
+			<h2>Atari</h2>
+			<a href="Error.html" class="button">£325.46</a>
+		</section>
+	</main>
+	
+
+
+<div class = "wrapper"> <!--Social Icon-->
+    <div class="media">
+      <ul>
+        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+        </ul>
+    </div> 
+   </div>
+   
+   <p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p>
+
+   <footer>
+	<div id="footer"> <!--Footer-->
+		&copy; 2023 GamestationX. All rights reserved.
+	  </div>
+      </footer>
+      
+</body>
+</html>

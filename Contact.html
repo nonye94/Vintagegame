@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    
+<style>
+
+/* Page background style */
+body {  
+           margin: 0;
+           background-color:#d7be95;
+           font-family: 'Lily Script One', cursive;
+          padding: 0;
+          list-style: none;
+          font-size: 20px; 
+      } 
+
+    main{
+        height: 100vh;
+    }
+      
+    header {
+          background-color: #803b19;
+          color: #fff;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 13px;
+          text-shadow: 2px 2px #333;
+          font-size: 48px;
+      }
+      h1 {
+          margin: 0;
+          font-size: 32px;
+      }
+
+      nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+      }
+      
+      nav ul li {
+          margin-right: 20px;
+      }
+      
+      nav ul li:last-child {
+          margin-right: 0;
+      }
+      
+      nav ul li a {
+        /* display: block; */
+        width: 110px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      
+      nav ul li a:hover {
+          color: #a8dadc;
+      }
+          /* Footer */
+    footer{
+        background-color: #803b19;
+          color: white;
+          padding: 10px;
+          text-align: center;
+          font-size: 18px;
+          width: 100%;
+          position: absolute;
+         
+    }
+
+    /* Form styling */
+form {
+  font-family: 'Lily Script One', cursive;
+        max-width: 500px;
+        margin: 1%;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+       
+      }
+      input[type=text], select, textarea {
+        width: 95%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      input[type=submit] {
+        background-color: grey;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type=submit]:hover {
+        background-color: burlywood;
+      }
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        font-weight: bold;
+      }
+      .error {
+        color: red;
+      }
+
+      ul.boxes{
+        display: grid;
+        grid-template-columns:  auto auto;
+        list-style: none;
+        gap: 50px;
+      }
+      /* Header */
+        @keyframes header {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+
+@keyframes nav {
+     from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(1px);
+    } 
+    
+   to {
+        box-shadow: 2px 2px 20px white;
+    }
+
+} 
+
+h1{
+    text-align: center;
+    /*font-size: 50px;
+    color: red;*/
+    animation: header 1.2s linear both ; 
+      
+        color:#D27108;
+        font-weight: bold;
+        text-align: left;
+        font-size: 60px;
+        text-shadow: 2px 2px #333;
+}
+
+/* social media icon */
+ul.media{ 
+  display: flex; 
+  list-style: none;
+gap: 10px;
+font-size: 10px;
+padding: 10px 10px;
+ color: black; 
+border-radius: 10%;
+transition: 5s;
+}
+
+li{
+  list-style: none;
+  margin:0px 0px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: black;
+  border-radius: 10%;
+  transition: 5s; 
+}
+/* Social icon color */    
+ul.media li:hover .fa-whatsapp {
+  color: green;
+  transition: .5s;
+}
+ul.media li:hover .fa-snapchat-square {
+  color: yellow;
+  transition: .5s;
+}
+ul.media li:hover .fa-instagram {
+  color: #c32aa3;
+  
+  transition: .5s;
+}
+ul.media li:hover .fa-twitter {
+  color: #1da1f2;
+  
+  transition: .5s;
+}
+ul.media li:hover .fa-facebook-official {
+  color: #4267B2;
+ 
+  transition: .5s;
+}
+/* Spacing */
+p a {
+  margin-left: 10px;
+}
+
+h2{
+  margin-left:10px ;
+  color: black;
+}
+
+p{
+  margin: 10px;
+  color: black;
+}
+/* Hyperlink colour */
+span{
+color: blue;
+}
+</style>
+</head>
+<body style="background-image:url('images/home.jpg');">
+    <header>
+		<h1>GameStationX</h1>
+		<nav>
+			<ul>
+				<li><a href="HomePage.html">Home</a></li>
+				<li><a href="gamepage.html">Game</a></li>
+				<li><a href="About2.html">About Us</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Services.html">Services</a></li>
+			</ul>
+		</nav>
+
+    
+	</header>
+
+<!-- main start  -->
+    <main>
+        <h2>Have a question? Do you need to send us your item? Get in touch with us below. </h2>
+        <div class="container">
+            <div class="column column1">
+               
+                    <h2 class="no-margin-top">Frequently Asked Questions</h2>
+                <p> If you have questions about warranties, what's wrong with your device,<br> or how GamestationX's repair services work, this section is for you.<br>
+                <a class="button" style="margin-top:30px;" href="SeeFaq" target="Faq" rel="noopenernoreferrer"><span>See Faq</span></a></p>
+                
+            </div>
+        </div>
+
+        <div class="column column2">
+              <h2 class="no-margin-top"> Contact Address</h2>
+              <p>Da1 dartford way</p>
+              <p>Crayford</p>
+              <p>Bexeleyheath</p>
+              <p>London</p>
+        </div>
+        
+
+        <div class="container"></div>
+  <div class="column column2">
+    <h2 class="no-margin-top">Get in touch with us.</h2>
+    <p> Give us a call:<A HREF="#"> <span>020876237429 </span></A></p>   
+      <p> Email us: <A HREF= "#"> <span>Chijioke@GameStationX.co.uk</span> </A></p>   
+        <p>  Opening Hours: 11AM to 5PM</p>   
+          <p> Monday to Saturday</p> 
+            <p> Closed Sundays</p>
+      
+  </div>
+
+<div class="container"> </div>
+    <div class="column column1">
+      <!--requestform -->
+        <div>
+           <form name="contactForm" onsubmit="return validateForm()">
+              <h1>Contact Us</h1>
+              <!--First Name-->
+              <input type="text" id="fname" name="firstname"   placeholder="First Name..." ><br>
+              <span class="error" id="fnameError"></span>
+             <br>
+              <!--Last Name-->
+               <input type="text" id="lname" name="lastname"  placeholder="Last name..."><br>
+              <span class="error" id="lnameError"></span>
+              <br>
+               <!--"email"-->
+              <input type="text" id="email" name="email" placeholder="Your email address..."><br>
+              <span class="error" id="emailError"></span>
+              <br>
+               <!--"phone"-->
+              <input type="text" id="Phone" name="phone"  placeholder="Your Phone number..."><br>
+              <span class="error" id="numberError"></span>
+              <br>
+              <!--"message"-->
+              <textarea id="text" name="message" placeholder="Message..." style="height:200px"></textarea>
+              <span class="error" id="messageError"></span>
+               <br>
+              <div class="Location">
+                <!-- menu-->
+                    <select name="menu-273" id="Location" class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                        <option value="Choose Nearest Location?">Choose Nearest Location?</option>
+                        <option value="New York">EastHam</option>
+                        <option value="San Francisco">Ilford</option>
+                    </select>
+              </div>
+               <br>
+              <div class="Reason">
+                    <select name="menu-273" id="Reason" class="wpcf7-form-control wpcf7-select" aria-invalid="false">
+                        <option value="Reason For Contacting Us">Reason For Contacting Us</option>
+                        <option value="Broken Item ">Broken Item</option>
+                        <option value="General Inquiries">General Inquiries</option>
+                        <option value="Customer Service">Customer Service</option>
+                        <option value="Customer Service">Other</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Sell">Sell</option>
+                    </select>    
+            </div>
+            <br> 
+            <input type="submit" value="Submit">
+            </form>
+          </div>
+          </div>
+ <!-- Map -->
+   <div class="column column2">
+   <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1762178554923!2d-0.1412901!3d51.509983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760590a1525713%3A0xe12a51ebb1ca7e6b!2sStork!5e0!3m2!1sen!2suk!4v1681835996156!5m2!1sen!2suk" width="1000" height="300" style="border:#333;" allowfullscreen="" ></iframe></p>
+  </div>
+
+
+<!-- social media icon -->
+<div class = "wrapper">
+    <div class="media">
+      <ul class="media">
+        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+        </ul>
+    </div>
+  </div>
+
+<!-- javascript for form -->
+  <script> 
+    function validateForm() {
+      var fname = document.forms["contactForm"]["firstname"].value;
+      var lname = document.forms["contactForm"]["lastname"].value;
+     var email = document.forms["contactForm"]["email"].value;
+      var phone = document.forms["contactForm"]["phone"].value;
+      var message = document.forms["contactForm"]["message"].value;
+      if (fname =="") {
+        document.getElementById("fnameError").innerHTML = "Please enter your first name";
+      }
+      else if (lname == "") {
+        document.getElementById("fnameError").innerHTML = "";
+        document.getElementById("lnameError").innerHTML = "Please enter your last name";  
+      }
+       else if (email == "") {
+        document.getElementById("lnameError").innerHTML = "";
+        document.getElementById("emailError").innerHTML = "Please enter your email address";
+      }
+       else if (phone == "") {
+        document.getElementById("emailError").innerHTML = "";
+        document.getElementById("numberError").innerHTML = "Please enter number";
+      }
+      else if (message == "") {
+        document.getElementById("numberError").innerHTML = "";
+        document.getElementById("messageError").innerHTML = " Please enter message";
+      }
+      else{
+        alert("Please select your location and reason for contacting us before submitting");
+      }
+      return false;
+    }
+  </script>
+
+<!-- Term and conditon -->
+<p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p>
+        
+ <!-- Footer -->
+        <footer>
+            &copy; 2023 GamestationX. All rights reserved.
+        </footer>
+    </main>
+<!-- main ends here -->
+
+</body>
+</html>

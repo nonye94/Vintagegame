@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Services</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+   
+    <!--columnstyle-->
+<style>
+  .container {
+    display: flex;
+  }
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  /* Body style */
+      body {
+        font-family: 'Lily Script One', cursive;
+       font-size: 20px;
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-color: #dbbf98;
+    }
+    /* Header style */
+    header {
+        background-color:  #803b19;
+        color: #D27108;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    /* Body */
+    span{
+      color:#a83838;
+    }
+    h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    nav ul li a:hover {
+        color: #a8dadc;
+    } 
+  p { 
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+    }  
+li{
+  color: black;
+}
+/* Footer */
+#footer {
+        background-color: #803b19;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+        width:100%;
+      }
+  /*Header*/
+      @keyframes header {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+@keyframes nav {
+     from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(1px);
+    } 
+   to {
+        box-shadow: 2px 2px 20px white;
+    }
+} 
+h1{
+    text-align: center;
+    /*font-size: 50px;
+    color: red;*/
+    animation: header 1.2s linear both ; 
+      
+        color:#D27108;
+        font-size: 50px;
+        font-weight: bold;
+        text-shadow: 0px 1px 3px black;
+        text-shadow: 1px 3px 3px #803b19;
+}
+/* Social media icon & Colouring */
+ ul.media{ 
+  display: flex; 
+  list-style: none;
+  gap: 10px;
+font-size: 20px;
+padding: 10px 10px;
+ color: white; 
+border-radius: 10%;
+transition: 5s;
+} 
+ul.media li:hover .fa-whatsapp {
+  color: green;
+  transition: .5s;
+}
+ul.media li:hover .fa-snapchat-square {
+  color: yellow;
+  transition: .5s;
+}
+ul.media li:hover .fa-instagram {
+  color: #c32aa3;
+  transition: .5s;
+}
+ul.media  li:hover .fa-twitter {
+  color: #1da1f2;
+  transition: .5s;
+}
+ul.media li:hover .fa-facebook-official {
+  color: #4267B2;
+  transition: .5s;
+}
+/* social media icon spacing */
+p a {  
+  margin-left: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+<header>
+		<h1>GameStationX</h1>
+		<nav>
+			<ul>
+				<li><a href="HomePage.html">Home</a></li>
+				<li><a href="gamepage.html">Game</a></li>
+				<li><a href="About2.html">About Us</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+				<li><a href="Services.html">Services</a></li>
+			</ul>
+		</nav>
+	</header>
+                <!-- Body sentence -->
+            <div class="container">
+              <div class="column column1">
+                <h1>Got a problem</h1>
+                <p>You'll require a repair service if your device has ceased functioning or has some sort of malfunction.
+                  We offer servicing and refurbishment for a wide variety of vintage games. In accordance with your specifications, our knowledgeable engineers will diagnose your problems and offer a quote..</p>
+                  <p>Common problem that needs repair:</p>
+
+                    <details>
+                      <summary style="cursor:pointer">Repair list</summary>
+                    <p>Speakers</p>
+                    <p>Video</p>
+                    <p>Lights</p>
+                    <p>Buttons</p>
+                    <p>Screen</p>
+                    <p>Failed Motherboared</p> 
+                    <p>Faulty Joystick</p>
+                    <p>Broken power port</p>
+                  </details>
+                   
+                   <p> If you are having technical issues with your item, do not panic. We are here to help.<br>
+                     Visit our<A HREF="Repair.html">repairs</A> page to find out if you can fix it yourself.
+                </div>
+              <div class="column column2">
+                
+                <h1><span>We will fix it!</span></h1>
+                <p>Anything from a collectible Star Wars pinball machine to home console or personal computers to Sega Rally from the late 1990s can be fixed by us.
+                  Your outdated computers can be restored to like-new condition by our staff of skilled experts. Our specialised arcade machine removals service allows us to pick up your machine from any place across the UK. When that happens, we'll service, fix, or recondition your machine.</p>
+                 
+                  <!-- Videogame -->
+                  <p> <iframe src="https://www.retrogames.cc/embed/10042-street-fighter-ii-champion-edition-yyc-bootleg-set-2-920313-etc-bootleg.html" width="600" height="350" frameborder="0" allowfullscreen></iframe></p>
+                </div>
+            </div>
+<!-- social media -->
+<div class = "wrapper">
+
+  <div class="media">
+    <ul class="media">
+      <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+        <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>  
+        
+      </ul>
+  </div>
+</div>
+    <!-- Term&Condition -->
+<p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+ <p><A HREF ="Error.html"> Privacy.</A></p> 
+<!-- Footer -->
+<div id="footer">
+  &copy; 2023 GamestationX. All rights reserved.
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requestform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: #dbbf98;
+      font-family: 'Lily Script One', cursive;
+      
+    }
+      p{
+      color: black;
+      font-size: 20px;
+      }
+      header {
+        background-color: #803b19;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 13px;
+      text-shadow: 2px 2px #333;
+      font-size: 48px;
+      width: 100%;
+      }
+       
+      h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+     
+      nav a:hover {
+        color: #a8dadc;
+        
+      }
+      
+      #content {
+        background-color: black;
+        padding: 20px;
+        font-size: 24px;
+        /* line-height: 1.5; */
+      }
+      #footer {
+        background-color: #803b19;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        font-size: 18px;
+      }
+         /* Request for style */
+      form {
+			max-width: 500px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: whitesmoke;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+		}
+		input[type=text], select, textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			resize: vertical;
+		}
+		input[type=submit] {
+			background-color: grey;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+
+    input[type=reset] {
+			background-color: grey;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+    input[type=reset]:hover {
+			background-color: #45a049;
+		}
+    
+		label {
+			padding: 12px 12px 12px 0;
+			display: inline-block;
+			font-weight: bold;
+		}
+		.error {
+			color: red;
+		}
+    </style>
+
+               <!-- Header -->
+    <header>
+      <h1>GameStationX</h1>
+      <nav>
+        <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="gamepage.html">Game</a></li>
+          <li><a href="About2.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Services.html">Services</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+    <!-- End of header -->
+     
+    
+    <!-- RequestForm -->
+    <h1>Vintage Game Repair Request Form</h1>
+    <form name="contactForm" onsubmit="return validateForm()">
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname" name="fullname" placeholder="Your full name..."required  >
+      <span class="error" id="fnameError"></span>
+  
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="email" placeholder="Your email address..."required >
+      <span class="error" id="emailError"></span>
+  
+      <label for="Phone">Phone</label>
+      <input type="text" name="Phone" placeholder="your number..."required > 
+      <span class="error" id="phoneError"></span>
+       
+      <label for="Pname">Platform</label>
+      <input type="text" id="Pname" name="Platform" placeholder="Platform..."required >
+      <span class="error" id="PnameError"></span>
+      
+      <label for="Gname">Game title</label>
+      <input type="text" id="Gname" name="Game title" placeholder="Game title..." required >
+      <span class="error" id="GnameError"></span>
+      
+
+      <label for="Iname" >Item issues</label>
+      <div class="Issues">
+        <select name="menu" class="select" aria-invalid="false">
+            <option value="No sound">No sound</option>
+            <option value="HDMI">HDMI</option>
+            <option value="Repair">Repair</option>
+            <option value="Software Repair">Software Repair</option>
+            <option value="	Broken Power Port">Broken Power Port</option>
+            <option value="Faulty Joystick">Item Issues</option>
+            <option value="Failed Motherboared">HDMI Repair</option>
+            <option value="Buttons not working">Software Repair</option>
+            <option value="	Lights have gone off">Broken Power Port</option>
+            <option value="Any Other Issues">Other</option>
+        </select>
+    </span>
+</div>
+        
+       <label for="issue-description">Issue Description:</label>
+        <textarea id="issue-description" name="issue-description" placeholder="Issue Description" required ></textarea>
+         <br>
+
+         <p class="I-color">
+          <input type="checkbox" Name="I agree to allow VintageGames (UK) Ltd to store and process my personal data.">I agree to allow VintageGames (UK) Ltd to store and process my personal data.<br>
+          <input type="checkbox" Name="I agree to receive marketing communications from VintageGames(UK) Ltd.">I agree to receive marketing communications from VintageGames (UK) Ltd.<br>
+          </p>
+
+      <input type="reset" value="Clear Form">
+       <input type="submit" value="Submit">
+    </form>
+       
+          
+<!-- End of requestform -->
+
+  <!-- Social media icons -->
+  <div class = "wrapper">
+    <div class="media">
+      <ul>
+        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li> 
+          <li><i class="fa fa-snapchat-square" aria-hidden="true"></i></li>
+          
+        </ul>
+    </div>
+  </div>  <!-- End of social media icon -->
+
+    <!-- Terms and contions -->
+    <p><A HREF ="Error.html"> Terms & Condtion.</A></p> 
+    <p><A HREF ="Error.html"> Privacy.</A></p>   <!-- End of Terms and contions -->         
+
+    
+        <style>
+
+@keyframes header {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(1px);
+    }
+}
+
+ @keyframes nav { 
+     from{
+        transform: translateY(-10px);
+    }
+    to{
+        transform: translateY(1px);
+    } 
+    
+   to {
+        box-shadow: 2px 2px 20px white;
+    }
+
+}  
+
+
+h1{
+    text-align: center;
+    /*font-size: 50px;
+    color: red;*/
+    animation: header 1.2s linear both ; 
+      
+        color:#D27108;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: left;
+        font-size: 60px;
+        text-shadow: 2px 2px #333;
+
+
+}
+
+li{  /* social media icon */
+  list-style: none;
+  margin:0px 0px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 10px;
+  color: black;
+  border-radius: 10%;
+  transition: 5s;
+  
+}
+
+li:hover .fa-whatsapp {
+  color: green;
+  transition: .5s;
+}
+li:hover .fa-snapchat-square {
+  color: yellow;
+  transition: .5s;
+}
+li:hover .fa-instagram {
+  color: #c32aa3;
+  transition: .5s;
+}
+li:hover .fa-twitter {
+  color: #1da1f2;
+  transition: .5s;
+}
+li:hover .fa-facebook-official {
+  color: #4267B2;
+  transition: .5s;
+}  /* End of social media icon */
+
+p a {
+  margin-left: 10px;
+}
+</style>
+
+<script>
+  function validateForm() {
+    var fname = document.forms["contactForm"]["fullname"].value;
+    var lname = document.forms["contactForm"]["Platform"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var itemissue = document.forms["contactForm"]["Game title"].value;
+    var phone = document.forms["contactForm"]["your number"].value;
+
+    if (fname == "") {
+      document.getElementById("fnameError").innerHTML = "Please enter your first name";
+      return false;
+    }
+    if (lname == "") {
+      document.getElementById("lnameError").innerHTML = "Please enter your last name";
+      return false;
+    }
+    if (email == "") {
+      document.getElementById("emailError").innerHTML = "Please enter your email address";
+      return false;
+    }
+    if (subject == "") {
+      document.getElementById("subjectError").innerHTML = "Please enter a subject";
+      return false;
+    }
+          if (subject == "") {
+      document.getElementById("subjectError").innerHTML = "Please enter a number";
+      return false;
+    }
+
+  }
+</script>
+
+            
+            
+                   
+            <div id="footer">
+              &copy; 2023 GamestationX. All rights reserved.
+            </div>   
+                 
+ </body>
+</html>
+
